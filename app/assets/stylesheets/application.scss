@@ -15,3 +15,21 @@
  */
 
 @import "bootstrap";
+
+
+table { 
+    border-collapse: collapse; 
+} 
+td { 
+    width:150px; 
+    text-align:center; 
+    border:1px solid black; 
+    padding:5px; 
+} 
+.red {
+  border-color: red;
+}
+
+.green {
+  border-color: green;
+}
