@@ -6,6 +6,7 @@ class MovieHallShowsController < ApplicationController
     @available_seats = @movie_hall_show.available_seats
     respond_to do |format|
       format.html # index.html.erb
+      format.js
       format.json { render json: @movie_hall_show }
     end
   end

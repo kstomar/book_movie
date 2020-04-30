@@ -1,3 +1,5 @@
+<h1> Seats </h1>
+
 <table>
   <% @hall.number_of_row.times.each do |row| %>
     <% row = ('a'..'z').to_a[row] %>
@@ -13,10 +15,3 @@
     <tr>
   <%end%>
 </table>
-
-<style>
-  table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
-  }
-</style>

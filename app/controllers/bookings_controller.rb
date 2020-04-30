@@ -8,7 +8,7 @@ class BookingsController < ApplicationController
 
     respond_to do |format|
       if success
-        format.html { redirect_to @booking.movie_hall_show, notice: 'Booking was successfully created.' }
+        format.html { redirect_to @booking.movie_hall_show.movie, notice: 'Booking was successfully created.' }
         format.json { render json: @booking, status: :created, location: @booking }
       else
         format.html { redirect_to @booking.movie_hall_show, notice: 'Booking was unsuccessfully.' }
