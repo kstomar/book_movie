@@ -1,4 +1,5 @@
 class HallsController < ApplicationController
+  before_action :authenticate_user!
 
   def show
     @hall = Hall.find(params[:id])

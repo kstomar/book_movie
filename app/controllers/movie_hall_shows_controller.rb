@@ -1,4 +1,5 @@
 class MovieHallShowsController < ApplicationController
+  before_action :authenticate_user!
 
   def show
     @movie_hall_show = MovieHallShow.find(params[:id])
